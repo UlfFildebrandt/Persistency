@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DataSource4
+Bundle-SymbolicName: DataSource4
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+JPA-PersistenceUnits: dataitems
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Service-Component: OSGI-INF/component-description.xml
+Export-Package: arch.datasource4
+Import-Package: arch.datasource4,
+ arch.datasourceinterface,
+ javax.persistence;version="1.0.0",
+ org.apache.derby.jdbc;version="10.5.1.1",
+ org.osgi.framework;version="1.3.0"
